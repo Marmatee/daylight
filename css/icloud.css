@@ -1,0 +1,7 @@
+html {
+    background: url(http://i.imgur.com/DYm1aqo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    min-height: 100%;
+}
