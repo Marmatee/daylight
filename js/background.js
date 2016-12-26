@@ -21,3 +21,9 @@ var image_array = new Array();
     $(document).ready(function() {
        $('html').css('background-image', 'url('+rand_path+')');
     });
+
+    document.write("<style>body { background-size:cover }</style>");
+
+var sheet = document.createElement('style')
+    sheet.innerHTML = "html {background-size: cover;}";
+    document.body.appendChild(sheet);
