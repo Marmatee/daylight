@@ -11,6 +11,7 @@
       "matches": [
         "https://www.icloud.com/"
       ],
+      "css": ["css/icloud.css"],
       "js": ["js/jquery-2.2.4.js", "js/background.js"]
     }
   ]
