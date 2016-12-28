@@ -8,14 +8,14 @@
     transition: ease-in-out 0.5s;
 }*/
 
-uploader {
+/*uploader {
     padding: 10px;
     position: absolute;
     right: 0px;
     bottom: 0px;
     color: #FFFFFF;
     font-size: 20px;
-}
+}*/
 
 html, body { height: 100% }
 
