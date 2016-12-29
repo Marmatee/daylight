@@ -67,8 +67,9 @@ ul li{
 }
 
 ul li:hover{
-    background-color: #4FB9A7;
     color: #FFF;
+    border-radius: 5px;
+    background-color: #e5f2ff;
 }
 
 ul li a{
