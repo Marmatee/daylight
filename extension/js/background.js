@@ -5,11 +5,18 @@ var bg = "http://i.imgur.com/Ve1wAfQ.jpg";
 
 $('body').css('background','url('+bg+')');
 
-$('body').append('<ul class="menu"><li><a href="#"><i class="fa fa-picture-o big"></i></a><ul>');
-$('body').append('<li class="daylist"><a href="#"><img src="http://i.imgur.com/DYm1aqos.jpg"></a></li>');
-$('body').append('<li class="daylist"><a href="#"><img src="http://i.imgur.com/pWNgnmOs.jpg"></a></li>');
-$('body').append('<li class="daylist"><a href="#"><img src="http://i.imgur.com/09iertas.jpg"></a></li>');
-$('body').append('<li class="daylist"><a href="#"><img src="http://i.imgur.com/ipqicfms.jpg"></a></li>');
-$('body').append('</ul></li></ul>');
+$('body').append('<div class="dropdown"> <input type="checkbox" id="checkbox-toggle"> <label for="checkbox-toggle" class="dropper"><i class="fa fa-picture-o" aria-hidden="true"></i></label> <ul class="switcher"> <li><a href="#"><img src="http://i.imgur.com/DYm1aqos.jpg"></a></li><li><a href="#"><img src="http://i.imgur.com/pWNgnmOs.jpg"></a></li><li><a href="#"><img src="http://i.imgur.com/09iertas.jpg"></a></li><li><a href="#"><img src="http://i.imgur.com/ipqicfms.jpg"></a></li></ul></div>');
 
-$('body').append("<script>$(document).ready(function(){$('.menu').dropit()});</script>");
+
+
+
+// <div class="dropdown">
+//     <input type="checkbox" id="checkbox-toggle">
+//     <label for="checkbox-toggle" class="dropper"><i class="fa fa-picture-o" aria-hidden="true"></i></label>
+//     <ul class="switcher">
+//         <li><a href="#"><img src="http://i.imgur.com/DYm1aqos.jpg"></a></li>
+//         <li><a href="#"><img src="http://i.imgur.com/pWNgnmOs.jpg"></a></li>
+//         <li><a href="#"><img src="http://i.imgur.com/09iertas.jpg"></a></li>
+//         <li><a href="#"><img src="http://i.imgur.com/ipqicfms.jpg"></a></li>
+//     </ul>
+// </div>

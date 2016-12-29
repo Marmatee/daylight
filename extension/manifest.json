@@ -10,8 +10,8 @@
   "content_scripts": [
     {
       "matches": ["https://www.icloud.com/"],
-      "css": ["css/icloud.css", "css/dropit.css"],
-      "js": ["js/jquery-2.2.4.js", "js/background.js", "js/dropit.js"]
+      "css": ["css/icloud.css", "css/menu.css"],
+      "js": ["js/jquery-2.2.4.js", "js/background.js"]
     }
   ]
 }
