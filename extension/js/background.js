@@ -5,7 +5,7 @@ var bg = "http://i.imgur.com/Ve1wAfQ.jpg";
 
 $('body').css('background','url('+bg+')');
 
-$('body').append('<div class="dropdown"> <input type="checkbox" id="checkbox-toggle"> <label for="checkbox-toggle" class="dropper"><i class="fa fa-picture-o" aria-hidden="true"></i></label> <ul class="switcher"> <li><a href="#"><img src="http://i.imgur.com/DYm1aqos.jpg"></a></li><li><a href="#"><img src="http://i.imgur.com/pWNgnmOs.jpg"></a></li><li><a href="#"><img src="http://i.imgur.com/09iertas.jpg"></a></li><li><a href="#"><img src="http://i.imgur.com/Ve1wAfQs.jpg"></a></li></ul></div>');
+$('body').append('<div class="dropdown"> <input type="checkbox" id="checkbox-toggle"> <label for="checkbox-toggle" class="dropper"><i class="fa fa-picture-o" aria-hidden="true"></i></label> <ul class="switcher"> <li><a href="javascript:void(0)"><img src="http://i.imgur.com/DYm1aqos.jpg"></a></li><li><a href="javascript:void(0)"><img src="http://i.imgur.com/pWNgnmOs.jpg"></a></li><li><a href="javascript:void(0)"><img src="http://i.imgur.com/09iertas.jpg"></a></li><li><a href="javascript:void(0)"><img src="http://i.imgur.com/Ve1wAfQs.jpg"></a></li></ul></div>');
 
 
 // I know that's HTML - but believe me it's easier to uncomment that stuff, then
@@ -19,9 +19,9 @@ $('body').append('<div class="dropdown"> <input type="checkbox" id="checkbox-tog
 //     <input type="checkbox" id="checkbox-toggle">
 //     <label for="checkbox-toggle" class="dropper"><i class="fa fa-picture-o" aria-hidden="true"></i></label>
 //     <ul class="switcher">
-//         <li><a href="#"><img src="http://i.imgur.com/DYm1aqos.jpg"></a></li>
-//         <li><a href="#"><img src="http://i.imgur.com/pWNgnmOs.jpg"></a></li>
-//         <li><a href="#"><img src="http://i.imgur.com/09iertas.jpg"></a></li>
-//         <li><a href="#"><img src="http://i.imgur.com/Ve1wAfQs.jpg"></a></li>
+//         <li><a href="javascript:void(0)"><img src="http://i.imgur.com/DYm1aqos.jpg"></a></li>
+//         <li><a href="javascript:void(0)"><img src="http://i.imgur.com/pWNgnmOs.jpg"></a></li>
+//         <li><a href="javascript:void(0)"><img src="http://i.imgur.com/09iertas.jpg"></a></li>
+//         <li><a href="javascript:void(0)"><img src="http://i.imgur.com/Ve1wAfQs.jpg"></a></li>
 //     </ul>
 // </div>
