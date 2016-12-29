@@ -4,14 +4,14 @@
   "description": "alpha v0.0.1 | Chrome extension to customise the Apple iCloud web interface - By Marmatee",
   "homepage_url": "https://github.com/Marmatee/daylight",
   "version": "0.0.1",
-   "browser_action": {
-   },
+  "browser_action": {
+    "default_title": "daylight"
+  },
   "content_scripts": [
     {
-      "matches": [
-        "https://www.icloud.com/"
-      ],
-      "js": ["js/jquery-2.2.4.js", "js/background.js"]
+      "matches": ["https://www.icloud.com/"],
+      "css": ["css/icloud.css", "css/menu.css"],
+      "js": ["js/jquery-2.2.4.js", "js/background.js", "js/switcher.js"]
     }
   ]
 }
