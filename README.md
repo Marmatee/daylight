@@ -1,7 +1,7 @@
 # daylight
 A Chrome extension to customise the Apple iCloud web interface
 
-![alt text](screenshots/screenshot-v0.0.2.gif "daylight")
+![alt text](https://github.com/Marmatee/daylight/blob/switcher/screenshots/screenshot-0.0.2.gif?raw=true "daylight")
 
 ### Notes
 - Images will need to be the same size otherwise the ease-in-out property looks stretchy (try it, that's the best i can explain)
