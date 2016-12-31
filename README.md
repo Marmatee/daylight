@@ -8,6 +8,7 @@ A Chrome extension to customise the Apple iCloud web interface
 
 ### Installation
 - To test the extension yourself, download and extract daylight*.zip and then follow these instructions: https://developer.chrome.com/extensions/getstarted#unpacked
+- Load the "unpacked extension" in the daylight*/extension folder (which contains the manifest.json file)
 
 ### Credits
 - flutberf - http://imgur.com/gallery/hvLyp
