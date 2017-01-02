@@ -10,6 +10,8 @@ A Chrome extension to customise the Apple iCloud web interface
 
 ### Notes
 - Images will need to be the same size otherwise the ease-in-out property looks stretchy (try it, that's the best i can explain)
+- Due to the "label" bug that has been present in the last two builds, I am going to have to rewrite the frontend in JS instead of plain CSS
+- http://fontawesome.io/icon/pencil-square-o/ - Use for the text input box
 
 ### Installation
 - To test the extension yourself, download and extract daylight*.zip and then follow these instructions: https://developer.chrome.com/extensions/getstarted#unpacked
