@@ -8,17 +8,19 @@ var img2 = "http://i.imgur.com/pWNgnmO.jpg";
 var img3 = "http://i.imgur.com/09ierta.jpg";
 var img4 = "http://i.imgur.com/Ve1wAfQ.jpg";
 
-// var value = document.querySelectorAll("body")[0].style.background.replace(/(url\(|\)|")/g, '');
-
 $('head').append("<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>");
 
-// Put any pic you want in here
-var bg = "http://i.imgur.com/Ve1wAfQ.jpg";
+// Old way - static variable
+// var bg = "http://i.imgur.com/Ve1wAfQ.jpg";
 
-
-// var hellohello = chrome.storage.sync.get("background", function(obj) {console.log(obj.background);});
-
+// Now it saves them
+chrome.storage.sync.get("background", function(obj) {
+bg = (obj.background);
 $('body').css('background','url('+bg+')');
+});
+
+// Old way - static bg
+// $('body').css('background','url('+bg+')');
 
 //switcher
 $('body').append(' <div class="dropdown"> <input type="checkbox" id="checkbox-toggle"> <label for="checkbox-toggle" class="dropper"><i class="fa fa-picture-o" aria-hidden="true"></i></label> <ul class="switcher"> <li><a href="javascript:void(0)"><img src="http://i.imgur.com/DYm1aqos.jpg"></a></li><li><a href="javascript:void(0)"><img src="http://i.imgur.com/pWNgnmOs.jpg"></a></li><li><a href="javascript:void(0)"><img src="http://i.imgur.com/09iertas.jpg"></a></li><li><a href="javascript:void(0)"><img src="http://i.imgur.com/Ve1wAfQs.jpg"></a></li></ul></div>');
@@ -26,36 +28,42 @@ $('body').append(' <div class="dropdown"> <input type="checkbox" id="checkbox-to
 // testing
 //<input type="button" id="get" value="get" style="position: absolute; z-index:1000;">
 
+
 (function($) {
   $(document).ready(function() {
-
-
     $(css1).click(function() {
       $('body').css('background', 'url('+img1+')');
        var value = document.querySelectorAll("body")[0].style.background.replace(/(url\(|\)|")/g, '');
         // alert(value);
 
         chrome.storage.sync.set({'background': value}, function(){
-          alert('Success!');
+          // alert('Success!');
         });
-
-        // chrome.storage.sync.get("background", function(obj) {
-        //   console.log(obj.background);
-        // });
-
     });
 
 
     $(css2).click(function() {
       $('body').css('background', 'url('+img2+')');
+       var value = document.querySelectorAll("body")[0].style.background.replace(/(url\(|\)|")/g, '');
+
+        chrome.storage.sync.set({'background': value}, function(){
+        });
     });
 
     $(css3).click(function() {
       $('body').css('background', 'url('+img3+')');
+       var value = document.querySelectorAll("body")[0].style.background.replace(/(url\(|\)|")/g, '');
+
+        chrome.storage.sync.set({'background': value}, function(){
+        });
     });
 
     $(css4).click(function() {
       $('body').css('background', 'url('+img4+')');
+       var value = document.querySelectorAll("body")[0].style.background.replace(/(url\(|\)|")/g, '');
+
+        chrome.storage.sync.set({'background': value}, function(){
+        });
     });
 
   });
