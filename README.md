@@ -3,6 +3,11 @@ A Chrome extension to customise the Apple iCloud web interface
 
 ![alt text](https://github.com/Marmatee/daylight/blob/master/screenshots/screenshot-0.0.2.gif?raw=true "daylight")
 
+### "Refractor" 0.0.3-alpha
+- This release allows us to customise the Apple iCloud background image.
+- The background image is saved when leaving the page/quitting Chrome.
+- *untested* Theoretically the saved background image will sync between other devices running Chrome/daylight which you are signed into with your Google Account.
+
 ### Notes
 - Images will need to be the same size otherwise the ease-in-out property looks stretchy (try it, that's the best i can explain)
 
