@@ -15,59 +15,78 @@ $('head').append("<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax
 
 // Now it saves them
 chrome.storage.sync.get("background", function(obj) {
-bg = (obj.background);
-$('body').css('background','url('+bg+')');
+    bg = (obj.background);
+    $('body').css('background', 'url(' + bg + ')');
 });
 
 // Old way - static bg
 // $('body').css('background','url('+bg+')');
 
 //switcher
-$('body').append(' <div class="dropdown"> <input type="checkbox" id="checkbox-toggle"> <label for="checkbox-toggle" class="dropper"><i class="fa fa-picture-o" aria-hidden="true"></i></label> <ul class="switcher"> <li><a href="javascript:void(0)"><img src="http://i.imgur.com/DYm1aqos.jpg"></a></li><li><a href="javascript:void(0)"><img src="http://i.imgur.com/pWNgnmOs.jpg"></a></li><li><a href="javascript:void(0)"><img src="http://i.imgur.com/09iertas.jpg"></a></li><li><a href="javascript:void(0)"><img src="http://i.imgur.com/Ve1wAfQs.jpg"></a></li></ul></div>');
+$('body').append('<div class="dropdown"> <input type="checkbox" id="checkbox-toggle"> <label for="checkbox-toggle" class="dropper"><i class="fa fa-picture-o" aria-hidden="true"></i></label> <ul class="switcher"> <p class="custombglabel">Paste custom background here: </p><input class="custombg" type="text" id="custombg"> <li><a href="javascript:void(0)"><img src="http://i.imgur.com/DYm1aqos.jpg"></a></li><li><a href="javascript:void(0)"><img src="http://i.imgur.com/pWNgnmOs.jpg"></a></li><li><a href="javascript:void(0)"><img src="http://i.imgur.com/09iertas.jpg"></a></li><li><a href="javascript:void(0)"><img src="http://i.imgur.com/Ve1wAfQs.jpg"></a></li></ul></div>');
 
-// testing
-//<input type="button" id="get" value="get" style="position: absolute; z-index:1000;">
+// text input
+// <input class="custombg" type="text" id="custombg"></input>
 
 
 (function($) {
-  $(document).ready(function() {
-    $(css1).click(function() {
-      $('body').css('background', 'url('+img1+')');
-       var value = document.querySelectorAll("body")[0].style.background.replace(/(url\(|\)|")/g, '');
-        // alert(value);
+    $(document).ready(function() {
+        $(css1).click(function() {
+            $('body').css('background', 'url(' + img1 + ')');
+            var value = document.querySelectorAll("body")[0].style.background.replace(/(url\(|\)|")/g, '');
+            // alert(value);
 
-        chrome.storage.sync.set({'background': value}, function(){
-          // alert('Success!');
+            chrome.storage.sync.set({
+                'background': value
+            }, function() {
+                // alert('Success!');
+            });
         });
-    });
 
 
-    $(css2).click(function() {
-      $('body').css('background', 'url('+img2+')');
-       var value = document.querySelectorAll("body")[0].style.background.replace(/(url\(|\)|")/g, '');
+        $(css2).click(function() {
+            $('body').css('background', 'url(' + img2 + ')');
+            var value = document.querySelectorAll("body")[0].style.background.replace(/(url\(|\)|")/g, '');
 
-        chrome.storage.sync.set({'background': value}, function(){
+            chrome.storage.sync.set({
+                'background': value
+            }, function() {});
         });
-    });
 
-    $(css3).click(function() {
-      $('body').css('background', 'url('+img3+')');
-       var value = document.querySelectorAll("body")[0].style.background.replace(/(url\(|\)|")/g, '');
+        $(css3).click(function() {
+            $('body').css('background', 'url(' + img3 + ')');
+            var value = document.querySelectorAll("body")[0].style.background.replace(/(url\(|\)|")/g, '');
 
-        chrome.storage.sync.set({'background': value}, function(){
+            chrome.storage.sync.set({
+                'background': value
+            }, function() {});
         });
-    });
 
-    $(css4).click(function() {
-      $('body').css('background', 'url('+img4+')');
-       var value = document.querySelectorAll("body")[0].style.background.replace(/(url\(|\)|")/g, '');
+        $(css4).click(function() {
+            $('body').css('background', 'url(' + img4 + ')');
+            var value = document.querySelectorAll("body")[0].style.background.replace(/(url\(|\)|")/g, '');
 
-        chrome.storage.sync.set({'background': value}, function(){
+            chrome.storage.sync.set({
+                'background': value
+            }, function() {});
         });
-    });
 
-  });
+    });
 })(jQuery);
+
+// Custom Backgrounds
+$("#custombg").on("keydown", function search(e) {
+    if (e.keyCode == 13) {
+        var custom = ($(this).val());
+        $('body').css('background', 'url(' + custom + ')');
+        var value = document.querySelectorAll("body")[0].style.background.replace(/(url\(|\)|")/g, '');
+        chrome.storage.sync.set({
+            'background': value
+        }, function() {});
+    }
+});
+
+
 
 
 // I know that's HTML - but believe me it's easier to uncomment that stuff, then
@@ -81,6 +100,7 @@ $('body').append(' <div class="dropdown"> <input type="checkbox" id="checkbox-to
 //     <input type="checkbox" id="checkbox-toggle">
 //     <label for="checkbox-toggle" class="dropper"><i class="fa fa-picture-o" aria-hidden="true"></i></label>
 //     <ul class="switcher">
+//     <p class="custombglabel">Paste custom background here: </p><input class="custombg" type="text" id="custombg">
 //         <li><a href="javascript:void(0)"><img src="http://i.imgur.com/DYm1aqos.jpg"></a></li>
 //         <li><a href="javascript:void(0)"><img src="http://i.imgur.com/pWNgnmOs.jpg"></a></li>
 //         <li><a href="javascript:void(0)"><img src="http://i.imgur.com/09iertas.jpg"></a></li>

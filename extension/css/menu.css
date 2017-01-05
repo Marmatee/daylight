@@ -77,3 +77,13 @@ input[type=checkbox]:checked ~ label {
 input[type=checkbox]:checked ~ ul {
     display: block;
 }
+
+input#custombg {
+    margin-top: 10px;
+}
+
+p.custombglabel {
+    color: black;
+    display: inline;
+    margin-left: 15px;
+}
