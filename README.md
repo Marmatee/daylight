@@ -6,7 +6,7 @@ A Chrome extension to customise the Apple iCloud web interface
 ### "Refractor" 0.0.3-alpha
 - This release allows us to customise the Apple iCloud background image.
 - The background image is saved when leaving the page/quitting Chrome.
-- *untested* Theoretically the saved background image will sync between other devices running Chrome/daylight which you are signed into with your Google Account.
+- The saved background image will sync between other devices running Chrome/daylight which you are signed into with your Google Account.
 
 ### Notes
 - Images will need to be the same size otherwise the ease-in-out property looks stretchy (try it, that's the best i can explain)
