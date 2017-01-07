@@ -79,11 +79,20 @@ input[type=checkbox]:checked ~ ul {
 }
 
 input#custombg {
-    margin-top: 10px;
+    z-index: 100;
+    position: absolute;
+    bottom: 25px;
+    right: 75px;
+    width: 300px;
 }
 
 p.custombglabel {
+    bottom: 12px;
     color: black;
-    display: inline;
     margin-left: 15px;
+    position: absolute;
+    right: 60px;
+    background-color: aliceblue;
+    padding: 15px 335px 15px 15px;
+    border-radius: 5px;
 }

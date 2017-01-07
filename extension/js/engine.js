@@ -23,7 +23,7 @@ chrome.storage.sync.get("background", function(obj) {
 // $('body').css('background','url('+bg+')');
 
 //switcher
-$('body').append('<div class="dropdown"> <p class="custombglabel">Paste custom background here: </p><input class="custombg" type="text" id="custombg"> <input type="checkbox" id="checkbox-toggle"> <label for="checkbox-toggle" class="dropper"><i class="fa fa-picture-o" aria-hidden="true"></i></label> <ul class="switcher"> <li><a href="javascript:void(0)"><img src="http://i.imgur.com/DYm1aqos.jpg"></a></li><li><a href="javascript:void(0)"><img src="http://i.imgur.com/pWNgnmOs.jpg"></a></li><li><a href="javascript:void(0)"><img src="http://i.imgur.com/09iertas.jpg"></a></li><li><a href="javascript:void(0)"><img src="http://i.imgur.com/Ve1wAfQs.jpg"></a></li></ul></div>');
+$('body').append('<p class="custombglabel">Paste custom background here: </p><input class="custombg" type="text" id="custombg"><div class="dropdown"> <input type="checkbox" id="checkbox-toggle"> <label for="checkbox-toggle" class="dropper"><i class="fa fa-picture-o" aria-hidden="true"></i></label> <ul class="switcher"> <li><a href="javascript:void(0)"><img src="http://i.imgur.com/DYm1aqos.jpg"></a></li><li><a href="javascript:void(0)"><img src="http://i.imgur.com/pWNgnmOs.jpg"></a></li><li><a href="javascript:void(0)"><img src="http://i.imgur.com/09iertas.jpg"></a></li><li><a href="javascript:void(0)"><img src="http://i.imgur.com/Ve1wAfQs.jpg"></a></li></ul></div>');
 
 // text input
 // <input class="custombg" type="text" id="custombg"></input>
@@ -107,8 +107,8 @@ $("#custombg").on("keydown", function search(e) {
 
 //****************************************************************************//
 //
+// <p class="custombglabel">Paste custom background here: </p><input class="custombg" type="text" id="custombg">
 // <div class="dropdown">
-//     <p class="custombglabel">Paste custom background here: </p><input class="custombg" type="text" id="custombg">
 //     <input type="checkbox" id="checkbox-toggle">
 //     <label for="checkbox-toggle" class="dropper"><i class="fa fa-picture-o" aria-hidden="true"></i></label>
 //     <ul class="switcher">
