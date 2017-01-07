@@ -23,7 +23,7 @@ chrome.storage.sync.get("background", function(obj) {
 // $('body').css('background','url('+bg+')');
 
 //switcher
-$('body').append('<div class="dropdown"> <input type="checkbox" id="checkbox-toggle"> <label for="checkbox-toggle" class="dropper"><i class="fa fa-picture-o" aria-hidden="true"></i></label> <ul class="switcher"> <p class="custombglabel">Paste custom background here: </p><input class="custombg" type="text" id="custombg"> <li><a href="javascript:void(0)"><img src="http://i.imgur.com/DYm1aqos.jpg"></a></li><li><a href="javascript:void(0)"><img src="http://i.imgur.com/pWNgnmOs.jpg"></a></li><li><a href="javascript:void(0)"><img src="http://i.imgur.com/09iertas.jpg"></a></li><li><a href="javascript:void(0)"><img src="http://i.imgur.com/Ve1wAfQs.jpg"></a></li></ul></div>');
+$('body').append('<div class="dropdown"> <p class="custombglabel">Paste custom background here: </p><input class="custombg" type="text" id="custombg"> <input type="checkbox" id="checkbox-toggle"> <label for="checkbox-toggle" class="dropper"><i class="fa fa-picture-o" aria-hidden="true"></i></label> <ul class="switcher"> <li><a href="javascript:void(0)"><img src="http://i.imgur.com/DYm1aqos.jpg"></a></li><li><a href="javascript:void(0)"><img src="http://i.imgur.com/pWNgnmOs.jpg"></a></li><li><a href="javascript:void(0)"><img src="http://i.imgur.com/09iertas.jpg"></a></li><li><a href="javascript:void(0)"><img src="http://i.imgur.com/Ve1wAfQs.jpg"></a></li></ul></div>');
 
 // text input
 // <input class="custombg" type="text" id="custombg"></input>
@@ -94,13 +94,24 @@ $("#custombg").on("keydown", function search(e) {
 // and paste it in the append shown above.
 //
 // - Marmatee
+//
+// ----------------------------------------------------------------------------------------
+//
+// The HTML for the custom background input box is absolutely dire and for that I am sorry,
+// please respect this is an alpha build and I'm only positioning it here for testing
+// purposes. My future vision is to actually move everything from webpage elements to a
+// dedicated Chrome dropdown.
+//
+// - Marmatee
+//
+
 //****************************************************************************//
 //
 // <div class="dropdown">
+//     <p class="custombglabel">Paste custom background here: </p><input class="custombg" type="text" id="custombg">
 //     <input type="checkbox" id="checkbox-toggle">
 //     <label for="checkbox-toggle" class="dropper"><i class="fa fa-picture-o" aria-hidden="true"></i></label>
 //     <ul class="switcher">
-//     <p class="custombglabel">Paste custom background here: </p><input class="custombg" type="text" id="custombg">
 //         <li><a href="javascript:void(0)"><img src="http://i.imgur.com/DYm1aqos.jpg"></a></li>
 //         <li><a href="javascript:void(0)"><img src="http://i.imgur.com/pWNgnmOs.jpg"></a></li>
 //         <li><a href="javascript:void(0)"><img src="http://i.imgur.com/09iertas.jpg"></a></li>
